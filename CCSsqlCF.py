@@ -1,5 +1,5 @@
 #贷后报告
-afterLoanReportSql='''
+afterLoanReportSql  ='''
 SELECT
 	p.id,
 	p.batch_no,

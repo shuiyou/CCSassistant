@@ -40,6 +40,7 @@ class JwtTokenUtils():
     @staticmethod
     def fetchJwt(apiResult):
         if apiResult.resCode =='0':
+            print(apiResult.data.jwt)
             return apiResult.data.jwt
         print(apiResult.resMsg)
         return None
@@ -47,12 +48,10 @@ class JwtTokenUtils():
 
 
 
-
 if __name__ == '__main__':
     a = DefensorClient()
-    a.login('http://192.168.1.15:100/gateway/defensor/api/open/jwt/login', '0000000000', 'ccs', 'ccs1234qwer', 'true')
-
-
+    c = a.login('http://192.168.1.15:100/gateway/defensor/api/open/jwt/login', '0000000000', 'ccs', 'ccs1234qwer', 'true')
+    print(c)
 
     # data=str(a.login('http://192.168.1.15:100/gateway/defensor/api/open/jwt/login','0000000000','ccs1','ccs1234qwer','true'))
     # print()

@@ -33,6 +33,10 @@ def isComExist(certNo)->bool:
     return flag
 
 
+
+
+
+
 def creatCompanyInfo(name,certNo,input):
     sql_insert='''
         

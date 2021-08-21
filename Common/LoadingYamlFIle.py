@@ -17,8 +17,7 @@ class LoadingYamlFIle():
         return d
 
 
-    #获取数据库连接信息
-    #获取数据库连接信息
+#获取数据库连接信息
     def connectInfoDB(self,dbName):
         if dbName is not None:
             self.host =self.context[dbName]['host']

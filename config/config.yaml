@@ -1,6 +1,1 @@
-CCS_Extend:
-  host: 192.168.1.9
-  username: ccs_external
-  passwork: 32vfek5n
-  port: 3360
-  database: ccs_external
+

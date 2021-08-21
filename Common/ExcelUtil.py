@@ -1,10 +1,8 @@
-
 import pandas as pd
-import numpy as np
 
 
 def readExcel():
-    path ='/Users/hanxiaodi/PycharmProjects/CCSassistant/excelTempleFile/批量开户测试.xlsx'
+    path ='/Users/hanxiaodi/PycharmProjects/CCSassistant/excelTempleFile/风控主体模板.xlsx'
     df = pd.read_excel(path)
     return df
 
@@ -32,5 +30,8 @@ def writeExcel(data,filePath):
     frame.to_excel(filePath)
 
 if __name__ == '__main__':
-    get_data()
+    d = readExcel()
+    data =pd.DataFrame.from_dict(d)
+    print(data)
+
 
